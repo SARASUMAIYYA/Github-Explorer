@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>GitHub Explorer</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>GitHub Explorer</h1>
+            <label for="username">Enter GitHub Username:</label>
+            <div class="search-container">
+                <input type="text" id="username" placeholder="Enter GitHub Username">
+                <button onclick="getRepositories()">Explore</button>
+            </div>
+        </div>
+
+        <div id="profile" class="profile-container">
+            <img id="profile-image" src="" alt="Profile Image">
+            <h2 id="profile-name"></h2>
+        </div>
+
+        <div id="loader" class="loader"></div>
+        <div id="repositories" class="repositories-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
